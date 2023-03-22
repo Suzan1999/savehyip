@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savehyip</title>
+    <!-- FontAwesome Icon CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- Flaton Icon  -->
+    <link rel="stylesheet" href="../public/assets/css/flaticon.css">
+    <!-- Google Font  -->
+    <link rel="stylesheet" href="../public/assets/css/font.css">
+    <!-- Alpine JS  -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Tailwind Stylesheet  -->
+    <link rel="stylesheet" href="../public/assets/css/output.css">
+    <!-- Custom Stylesheet  -->
+    <link rel="stylesheet" href="../public/assets/css/custom.css">
+    
+</head>
+<body>
+    <!-- Starts Form Header Section  -->
+    <header class="header absolute w-full z-[999]">
+        <div class="lg:container mx-auto lg:max-w-screen-2xl px-5 md:px-10 lg:px-16">
+            <!-- Navbar  -->
+            <nav class="navbar flex flex-wrap justify-between items-center py-4">
+                <!-- Nav Logo  -->
+                <div class="nav__logo">
+                    <a href="#">
+                        <img class="w-full" src="../public/assets/images/logo.png" alt="edu-logo">
+                    </a>
+                </div>
+                <!-- Nav Menu  -->
+                <div class="nav__menu">
+                    <ul class="gap-8 flex">
+                        <!-- Menu List  -->
+                        <li class="group relative inline-block">
+                            <a class="text-base font-semibold" href="#">
+                                Index
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                            <ul class="group-hover:visible absolute -left-1 top-12 p-5 w-40 bg-black text-white transition-all ease-in duration-500 invisible">
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    Index I
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    Index II
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    Index III
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Menu List  -->
+                        <li class="">
+                            <a class="text-base font-semibold" href="#">
+                                About Us 
+                            </a>
+                        </li>
+                        <!-- Menu List  -->
+                        <li class="">
+                            <a class="text-base font-semibold" href="#course">
+                                Investment Plan
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                        </li>
+                        <!-- Menu List  -->
+                        <li class="">
+                            <a class="text-base font-semibold" href="#">
+                                Pages
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                        </li>
+                        <!-- Menu List  -->
+                        <li class="">
+                            <a class="text-base font-semibold" href="#">
+                                Dashboard
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                        </li>
+                        <!-- Menu List  -->
+                        <li class="">
+                            <a class="text-base font-semibold" href="#">
+                                Blog
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                        </li>
+                        <!-- Menu List  -->
+                        <li class="">
+                            <a class="text-base font-semibold" href="#">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Nav Button  -->
+                <div class="nav__button flex justify-start items-center">
+                    <!-- Register Button  -->
+                    <div class="register__button">
+                        <a class="inline-block text-base text-black text-center font-600 bg-PrimaryYellow py-2 w-28 rounded-l-full border-2 border-solid border-PrimaryYellow hover:bg-transparent transition-all ease-in-out duration-300" href="#">
+                            Register
+                        </a>
+                    </div>
+                    <!-- Login Button  -->
+                    <div class="login__button">
+                        <a class="inline-block text-base text-black font-600 bg-PrimaryBlue text-center py-2 w-28 rounded-r-full border-2 border-solid border-PrimaryBlue hover:bg-transparent transition-all ease-in-out duration-300" href="#">
+                            Login
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Starts Form Banner Section  -->
+  
+    <div class="banner relative">
+        <div class="lg:container mx-auto lg:max-w-screen-2xl px-5 md:px-10 lg:px-16">
+            <!-- Banner Content  -->
+                <!-- Banner Image  -->
+                <div class="banner__image  top-0 -left-96">
+                    <img class="w-full" src="../public/assets/images/banner.png" alt="">
+                </div>
+                <!-- Banner Slider  -->
+                <div class="banner__slider">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis totam esse laborum necessitatibus non odit provident eveniet officiis debitis alias officia molestiae ipsum eaque inventore dolores optio rem sapiente quasi, sequi nemo eos culpa tempora. Delectus aspernatur, eius ipsa id suscipit ab quasi ullam labore tempora sequi consectetur est saepe!
+                </div>
+        </div>
+    </div>
+    
+    <!-- Starts Form About Section  -->
+    <div class="about my-8 md:my-14 lg:my-20">
+        <div class="lg:container mx-auto lg:max-w-screen-2xl px-5 md:px-10 lg:px-16">
+            <!-- About Content -->
+            <div class="about__content grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14">
+                <!-- About thumbnail -->
+                <div class="about__thumbnail">
+                    <div class="relative before:absolute before:top-8 before:left-1 before:right-14 before:h-full before:border-PrimaryBlue before:border-solid before:border-8 lg:before:border-[10px] before:-z-10 flex justify-end">
+                        <img class="w-[90%] h-auto" src="../public/assets/images/about_img.jpg" alt="about__image">
+                    </div>
+                </div>
+                <!-- About Details  -->
+                <div class="about__details mt-6 sm:mt-10 md:mt-0">
+                    <!-- About Sub Title  -->
+                    <h4 class="about__sub-title text-PrimaryBlue text-base font-medium font-Poppins tracking-[5px]">
+                        WHO WE ARE
+                    </h4>
+                    <!-- About Title  -->
+                    <h2 class="about__title textt-2xl lg:text-3xxl font-medium font-Poppins mt-1 lg:mt-2">
+                        Welcome To SaveHyip
+                    </h2>
+                    <div class="h-[1px] w-24 bg-PrimaryBlue mt-2 lg:mt-4"></div>
+                    <!-- About Description  -->
+                    <p class="about__description text-SecondaryGrey text-base font-normal font-lato mt-5 lg:mt-10 ">
+                        Put your investing ideas into action with full range of investments. Enjoy real benefits and rewards on your accrue investing.
+                    </p>
+                    <!-- About Item  -->
+                    <div class="about__item mt-3 lg:mt-5">
+                        <ul>
+                            <!-- About List  -->
+                            <li>
+                                <a class="flex justify-start items-center gap-2 lg:gap-4 text-xl lg:text-2xl font-normal font-lato hover:text-PrimaryYellow transition-all ease-in-out duration-500 group" href="#">
+                                    <span class="flex justify-center items-center text-white text-base h-8 lg:h-12 w-8 lg:w-12 bg-[#bd4cec] group-hover:bg-PrimaryYellow rounded-full transition-all ease-in-out duration-500 group">
+                                        <i class="fa-regular fa-square-check"></i>
+                                    </span>
+                                     We Innovate
+                                </a>
+                            </li>
+                            <!-- About List  -->
+                            <li class="mt-4">
+                                <a class="flex justify-start items-center gap-2 lg:gap-4 text-xl lg:text-2xl font-normal font-lato hover:text-PrimaryYellow transition all ease-in-out duration-500 group" href="#">
+                                    <span class="flex justify-center items-center text-white text-base h-8 lg:h-12 w-8 lg:w-12 bg-PrimaryBlue group-hover:bg-PrimaryYellow  rounded-full transition-all ease-in-out duration-500">
+                                        <i class="fa-regular fa-square-check"></i>
+                                    </span>
+                                    Licenced & Certified
+                                </a>
+                            </li>
+                            <!-- About List  -->
+                            <li class="mt-4">
+                                <a class="flex justify-start items-center gap-2 lg:gap-4 text-xl lg:text-2xl font-normal font-lato hover:text-PrimaryYellow transition all ease-in-out duration-500 group" href="#">
+                                    <span class="flex justify-center items-center text-white text-base h-8 lg:h-12 w-8 lg:w-12 bg-[#19ccb1] group-hover:bg-PrimaryYellow  rounded-full transition-all ease-in-out duration-500">
+                                        <i class="fa-regular fa-square-check"></i>
+                                    </span>
+                                    Saving & Investments
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- About Button  -->
+                    <div class="about__button mt-6">
+                        <a class="inline-block text-white  text-base font-semibold font-lato bg-PrimaryBlue hover:bg-transparent hover:text-PrimaryBlue border-2 border-PrimaryBlue py-2 px-10 rounded-full transition-all ease-in-out duration-500" href="#">
+                            Get More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Starts Form Investment Plans Section  -->
+    <div class="investment__plan bg-InvestmentBgc bg-cover bg-no-repeat bg-center h-full">
+        <!-- Investment Overlay  -->
+        <div class="investment__overlay bg-black bg-opacity-80 h-full pt-16 lg:pt-24 pb-20 lg:pb-28">
+            <div class="lg:container mx-auto lg:max-w-screen-2xl px-5 md:px-10 lg:px-16">
+                <!-- Investment Content  -->
+                <div class="investment__content">
+                    <!-- Investment Heading  -->
+                    <div class="investment__heading text-center">
+                        <!-- Sub Title  -->
+                        <h4 class="sub-title text-PrimaryBlue text-base font-medium font-Poppins tracking-[5px]">
+                            our plans 
+                        </h4>
+                        <!-- Title  -->
+                        <h2 class="title text-white text-2xl sm:text-3xl font-medium font-Poppins mt-2">
+                            Our Investment Plans 
+                        </h2>
+                        <div class="h-[1px] w-24 bg-PrimaryBlue mx-auto mt-3"></div>
+                    </div>
+                    <!-- Investment Item  -->
+                    <div class="investment_item mt-20 sm:mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-24">
+                        <!-- Investment Card  -->
+                        <div class="investment__card bg-white text-center pt-14 pb-[60px] px-5 group rounded-[10px] relative">
+                            <!--Card Icon  -->
+                            <div class="card__icon absolute -top-10 left-0 right-0">
+                                <div class="relative after:absolute after:h-6 after:w-1 after:bg-[#bd4cec] after:-bottom-5 group-hover:after:bg-PrimaryYellow after:left-0 after:right-0 after:mx-auto after:rounded-full after:transition-all after:ease-in-out after:duration-500 z-10">
+                                    <span class="inline-flex justify-center items-center text-base text-white group-hover:text-black w-16 h-16 bg-[#bd4cec] group-hover:bg-PrimaryYellow rounded-full hover:bg-PrimaryYellow transition-all ease-in-out duration-500"> 
+                                        <i class="fa-solid fa-chart-simple"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <!--Card border  -->
+                            <div class="investment__border w-4 h-4 bg-[#bd4cec] group-hover:bg-PrimaryYellow rounded-full mx-auto relative after:absolute after:content'' after:border-2 after:border-solid after:border-[#bd4cec] after:group-hover:border-PrimaryYellow after:p-3 after:-top-[6px] after:-left-[6px] after:rounded-full transition-all ease-in-out duration-500 after:transition-all after:ease-in-out after:duration-500">
+                            </div>
+                            <!-- Card Details  -->
+                            <div class="card__details mt-8">
+                                <!-- Crad Title  -->
+                                <h2>
+                                    <a class="text-2xl font-semibold font-Poppins hover:text-PrimaryYellow transition-all ease-in-out duration-500 capitalize" href="#">
+                                        Silver Plan
+                                    </a>
+                                </h2>
+                                <div class="h-[1px] w-24 bg-[#bd4cec] mt-4 mx-auto"></div>
+                                <ul class="mt-7">
+                                    <li class="text-base font-normal font-lato">
+                                        Up to 5% for 20 Hourly 
+                                    </li>
+                                    <li class="text-base font-normal font-lato mt-2">
+                                        Compound Available 
+                                    </li>
+                                    <li class="text-base font-normal font-lato mt-2">
+                                        Down to 5% for 20 Hourly 
+                                    </li>
+                                    <li class="text-base font-normal font-lato mt-2">
+                                        Principal Return 
+                                    </li>
+                                    <li class="text-base font-normal font-lato mt-2">
+                                        Up to 5% for 20 Hourly
+                                    </li>
+                                </ul>
+                                <!-- Investment Button  -->
+                                <div class="investment__button absolute -bottom-5 left-0 right-0">
+                                    <a class="inline-block text-base text-white group-hover:text-black font-semibold font-lato bg-[#bd4cec] group-hover:bg-PrimaryYellow pt-2 pb-3 px-8 rounded-full transition-all ease-in-out duration-500" href="#">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Investment Card  -->
+                        <div class="investment__card bg-white text-center pt-14 pb-[60px] px-5 group rounded-[10px] relative">
+                            <!--Card Icon  -->
+                            <div class="card__icon absolute -top-10 left-0 right-0">
+                                <div class="relative after:absolute after:h-6 after:w-1 after:bg-[#eb6c40] after:-bottom-5 group-hover:after:bg-PrimaryYellow after:left-0 after:right-0 after:mx-auto after:rounded-full after:transition-all after:ease-in-out after:duration-500 z-10">
+                                    <span class="inline-flex justify-center items-center text-base text-white group-hover:text-black w-16 h-16 bg-[#eb6c40] group-hover:bg-PrimaryYellow rounded-full hover:bg-PrimaryYellow transition-all ease-in-out duration-500"> 
+                                        <i class="fa-solid fa-sack-dollar"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <!--Card border  -->
+                            <div class="investment__border w-4 h-4 bg-[#eb6c40] group-hover:bg-PrimaryYellow rounded-full mx-auto relative after:absolute after:content'' after:border-2 after:border-solid after:border-[#eb6c40] after:group-hover:border-PrimaryYellow after:p-3 after:-top-[6px] after:-left-[6px] after:rounded-full transition-all ease-in-out duration-500 after:transition-all after:ease-in-out after:duration-500">
+                            </div>
+                            <!-- Card Details  -->
+                            <div class="card__details mt-8">
+                                <!-- Crad Title  -->
+                                <h2>
+                                    <a class="text-2xl font-semibold font-Poppins hover:text-PrimaryYellow transition-all ease-in-out duration-500 capitalize" href="#">
+                                        Bronze Plan
+                                    </a>
+                                </h2>
+                                <div class="h-[1px] w-24 bg-[#eb6c40] mt-4 mx-auto"></div>
+                                <ul class="mt-7">
+                                    <li class="text-base font-normal font-lato">
+                                        Up to 5% for 20 Hourly 
+                                    </li>
+                                    <li class="text-base font-normal font-lato mt-2">
+                                        Compound Available 
+                                    </li>
+                                    <li class="text-base font-normal font-lato mt-2">
+                                        Down to 5% for 20 Hourly 
+                                    </li>
+                                    <li class="text-base font-normal font-lato mt-2">
+                                        Principal Return 
+                                    </li>
+                                    <li class="text-base font-normal font-lato mt-2">
+                                        Up to 5% for 20 Hourly
+                                    </li>
+                                </ul>
+                                <!-- Investment Button  -->
+                                <div class="investment__button absolute -bottom-5 left-0 right-0">
+                                    <a class="inline-block text-base text-white group-hover:text-black font-semibold font-lato bg-[#eb6c40] group-hover:bg-PrimaryYellow pt-2 pb-3 px-8 rounded-full transition-all ease-in-out duration-500" href="#">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Investment Card  -->
+                        <div class="investment__card bg-white text-center pt-14 pb-[60px] px-5 group rounded-[10px] relative">
+                            <!--Card Icon  -->
+                            <div class="card__icon absolute -top-10 left-0 right-0">
+                                <div class="relative after:absolute after:h-6 after:w-1 after:bg-PrimaryBlue after:-bottom-5 group-hover:after:bg-PrimaryYellow after:left-0 after:right-0 after:mx-auto after:rounded-full after:transition-all after:ease-in-out after:duration-500 z-10">
+                                    <span class="inline-flex justify-center items-center text-base text-white group-hover:text-black w-16 h-16 bg-PrimaryBlue group-hover:bg-PrimaryYellow rounded-full hover:bg-PrimaryYellow transition-all ease-in-out duration-500"> 
+                                        <i class="fa-solid fa-coins"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <!--Card border  -->
+                            <div class="investment__border w-4 h-4 bg-PrimaryBlue group-hover:bg-PrimaryYellow rounded-full mx-auto relative after:absolute after:content'' after:border-2 after:border-solid after:border-PrimaryBlue after:group-hover:border-PrimaryYellow after:p-3 after:-top-[6px] after:-left-[6px] after:rounded-full transition-all ease-in-out duration-500 after:transition-all after:ease-in-out after:duration-500">
+                            </div>
+                            <!-- Card Details  -->
+                            <div class="card__details mt-8">
+                                <!-- Crad Title  -->
+                                <h2>
+                                    <a class="text-2xl font-semibold font-Poppins hover:text-PrimaryYellow transition-all ease-in-out duration-500 capitalize" href="#">
+                                        copper plan
+                                    </a>
+                                </h2>
+                                <div class="h-[1px] w-24 bg-PrimaryBlue mt-4 mx-auto"></div>
+                                <ul class="mt-7">
+                                    <li class="text-base font-normal font-lato">
+                                        Up to 5% for 20 Hourly 
+                                    </li>
+                                    <li class="text-base font-normal font-lato mt-2">
+                                        Compound Available 
+                                    </li>
+                                    <li class="text-base font-normal font-lato mt-2">
+                                        Down to 5% for 20 Hourly 
+                                    </li>
+                                    <li class="text-base font-normal font-lato mt-2">
+                                        Principal Return 
+                                    </li>
+                                    <li class="text-base font-normal font-lato mt-2">
+                                        Up to 5% for 20 Hourly
+                                    </li>
+                                </ul>
+                                <!-- Investment Button  -->
+                                <div class="investment__button absolute -bottom-5 left-0 right-0">
+                                    <a class="inline-block text-base text-white group-hover:text-black font-semibold font-lato bg-PrimaryBlue group-hover:bg-PrimaryYellow pt-2 pb-3 px-8 rounded-full transition-all ease-in-out duration-500" href="#">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Investment Card  -->
+                        <div class="investment__card bg-white text-center pt-14 pb-[60px] px-5 group rounded-[10px] relative">
+                            <!--Card Icon  -->
+                            <div class="card__icon absolute -top-10 left-0 right-0">
+                                <div class="relative after:absolute after:h-6 after:w-1 after:bg-[#19ccb1] after:-bottom-5 group-hover:after:bg-PrimaryYellow after:left-0 after:right-0 after:mx-auto after:rounded-full after:transition-all after:ease-in-out after:duration-500 z-10">
+                                    <span class="inline-flex justify-center items-center text-base text-white group-hover:text-black w-16 h-16 bg-[#19ccb1] group-hover:bg-PrimaryYellow rounded-full hover:bg-PrimaryYellow transition-all ease-in-out duration-500"> 
+                                        <i class="fa-solid fa-medal"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <!--Card border  -->
+                            <div class="investment__border w-4 h-4 bg-[#19ccb1] group-hover:bg-PrimaryYellow rounded-full mx-auto relative after:absolute after:content'' after:border-2 after:border-solid after:border-[#19ccb1] after:group-hover:border-PrimaryYellow after:p-3 after:-top-[6px] after:-left-[6px] after:rounded-full transition-all ease-in-out duration-500 after:transition-all after:ease-in-out after:duration-500">
+                            </div>
+                            <!-- Card Details  -->
+                            <div class="card__details mt-8">
+                                <!-- Crad Title  -->
+                                <h2>
+                                    <a class="text-2xl font-semibold font-Poppins hover:text-PrimaryYellow transition-all ease-in-out duration-500 capitalize" href="#">
+                                        gold plan
+                                    </a>
+                                </h2>
+                                <div class="h-[1px] w-24 bg-[#19ccb1] mt-4 mx-auto"></div>
+                                <ul class="mt-7">
+                                    <li class="text-base font-normal font-lato">
+                                        Up to 5% for 20 Hourly 
+                                    </li>
+                                    <li class="text-base font-normal font-lato mt-2">
+                                        Compound Available 
+                                    </li>
+                                    <li class="text-base font-normal font-lato mt-2">
+                                        Down to 5% for 20 Hourly 
+                                    </li>
+                                    <li class="text-base font-normal font-lato mt-2">
+                                        Principal Return 
+                                    </li>
+                                    <li class="text-base font-normal font-lato mt-2">
+                                        Up to 5% for 20 Hourly
+                                    </li>
+                                </ul>
+                                <!-- Investment Button  -->
+                                <div class="investment__button absolute -bottom-5 left-0 right-0">
+                                    <a class="inline-block text-base text-white group-hover:text-black font-semibold font-lato bg-[#19ccb1] group-hover:bg-PrimaryYellow pt-2 pb-3 px-8 rounded-full transition-all ease-in-out duration-500" href="#">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Starts Form Calculator Section  -->
+    <div class="calculator my-14 lg:my-24">
+        <div class="lg:container mx-auto lg:max-w-screen-2xl px-5 md:px-10 lg:px-16">
+            <!-- Calculator Content  -->
+            <div class="calculator__content">
+                <!-- Calculator Heading  -->
+                <div class="calculator__heading text-center">
+                    <!-- Calculator Sub Title  -->
+                    <h4 class="calculator__sub-title text-PrimaryBlue text-base font-medium font-Poppins tracking-[5px] uppercase">
+                        plans calculator 
+                    </h4>
+                    <!-- Calculator Title  -->
+                    <h2 class="calculator__title text-2xl sm:text-3xl font-medium font-Poppins mt-2">
+                        How Much Can You Save With Plans? 
+                    </h2>
+                    <div class="h-[1px] w-24 bg-PrimaryBlue mx-auto mt-3">
+
+                    </div>
+                </div>
+                <div class="mt-20">
+                    <!-- Calculator Details  -->
+                    <div class="calculator__details">
+                        <!-- Calculator Amount  -->
+                        <div class="calculator__amount">
+                            <label class="inline-flex items-center gap-2 text-lg font-medium font-lato leading-3" for="amount">
+                                <span class="">
+                                    Deposit Amount : 
+                                </span>
+                                <span class="text-sm opacity-20">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </span>
+                            </label>
+                            <div class="flex border-b  gap-2">
+                                <span>
+                                    <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                </span>
+                                <input class="w-full outline-none" type="number" name="" id="" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FontAwesome Icon JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+</body>
+</html>
