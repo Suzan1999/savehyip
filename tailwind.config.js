@@ -28,6 +28,7 @@ module.exports = {
       },
       backgroundImage:{
         'InvestmentBgc': "url('/public/assets/images/investment.jpg')",
+        'WorkBgc': "url('/public/assets/images/work_banner.jpg')",
       },
       borderRadius: {
         'ss': '5px',
