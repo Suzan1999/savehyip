@@ -8,6 +8,7 @@ module.exports = {
       },
       margin:{
         '15':'60px',
+        '22':'90px',
       },
       boxShadow: {
         '3xl': '0px 8px 20px rgba(0, 0, 0, 0.06)',
@@ -37,6 +38,15 @@ module.exports = {
         'lato': ['Lato', 'sans-serif',],
         'Poppins': ['Poppins', 'sans-serif',],
 
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 100 },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn 0.2s ease-in-out forwards",
       },
       screens: {
         'llg': '1180px',
