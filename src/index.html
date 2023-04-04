@@ -9,7 +9,7 @@
     <!-- FontAwesome Icon CDN  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <!-- Flaton Icon  -->
-    <link rel="stylesheet" href="../public/assets/css/flaticon.css">
+    <link rel="stylesheet" href="../node_modules/@flaticon/flaticon-uicons/css/all/all.css">
     <!-- Google Font  -->
     <link rel="stylesheet" href="../public/assets/css/font.css">
     <!-- Alpine JS  -->
@@ -220,7 +220,7 @@
                     <!-- Investment Item  -->
                     <div class="investment_item mt-20 sm:mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-24">
                         <!-- Investment Card  -->
-                        <div class="investment__card bg-white text-center pt-14 pb-[60px] px-5 group rounded-[10px] relative">
+                        <div class="investment__card bg-white text-center pt-14 pb-[100px] px-5 group rounded-[10px] relative">
                             <!--Card Icon  -->
                             <div class="card__icon text-white h-16 w-16 bg-[#bd4cec] rounded-full mx-auto left-0 right-0 -top-8 absolute flex justify-center items-center group-hover:bg-PrimaryYellow transition all ease-in-out duration-500 after:absolute after:h-6 after:w-1 after:bg-[#bd4cec] after:-bottom-5 group-hover:after:bg-PrimaryYellow after:left-0 after:right-0 after:mx-auto after:rounded-full after:transition-all after:ease-in-out after:duration-500 19ccb1">
                                 <i class="fa-solid fa-chart-simple"></i>
@@ -255,7 +255,7 @@
                                     </li>
                                 </ul>
                                 <!-- Investment Button  -->
-                                <div class="investment__button absolute -bottom-5 left-0 right-0">
+                                <div class="investment__button absolute -bottom-5 mx-auto w-[145px] left-0 right-0">
                                     <a class="inline-block text-base text-white group-hover:text-black font-semibold font-lato bg-[#bd4cec] group-hover:bg-PrimaryYellow pt-2 pb-3 px-8 rounded-full transition-all ease-in-out duration-500" href="#">
                                         Read More
                                     </a>
@@ -298,7 +298,7 @@
                                     </li>
                                 </ul>
                                 <!-- Investment Button  -->
-                                <div class="investment__button absolute -bottom-5 left-0 right-0">
+                                <div class="investment__button absolute -bottom-5 mx-auto w-[145px] left-0 right-0">
                                     <a class="inline-block text-base text-white group-hover:text-black font-semibold font-lato bg-[#eb6c40] group-hover:bg-PrimaryYellow pt-2 pb-3 px-8 rounded-full transition-all ease-in-out duration-500" href="#">
                                         Read More
                                     </a>
@@ -341,7 +341,7 @@
                                     </li>
                                 </ul>
                                 <!-- Investment Button  -->
-                                <div class="investment__button absolute -bottom-5 left-0 right-0">
+                                <div class="investment__button absolute -bottom-5 mx-auto w-[145px] left-0 right-0">
                                     <a class="inline-block text-base text-white group-hover:text-black font-semibold font-lato bg-PrimaryBlue group-hover:bg-PrimaryYellow pt-2 pb-3 px-8 rounded-full transition-all ease-in-out duration-500" href="#">
                                         Read More
                                     </a>
@@ -384,8 +384,8 @@
                                     </li>
                                 </ul>
                                 <!-- Investment Button  -->
-                                <div class="investment__button absolute -bottom-5 left-0 right-0">
-                                    <a class="inline-block text-base text-white group-hover:text-black font-semibold font-lato bg-[#19ccb1] group-hover:bg-PrimaryYellow pt-2 pb-3 px-8 rounded-full transition-all ease-in-out duration-500" href="#">
+                                <div class="investment__button absolute -bottom-5 mx-auto w-[145px] left-0 right-0">
+                                    <a class="inline-block text-base right-14 text-white group-hover:text-black font-semibold font-lato bg-[#19ccb1] group-hover:bg-PrimaryYellow pt-2 pb-3 px-8 rounded-full transition-all ease-in-out duration-500" href="#">
                                         Read More
                                     </a>
                                 </div>
@@ -603,12 +603,14 @@
                     </div>
                     <!-- Transaction Button  -->
                     <div class="transaction__button flex justify-start items-center mt-8">
-                        <a class="inline-block text-base text-black text-center font-semibold bg-PrimaryYellow py-2 md:py-3 w-24 md:w-32 rounded-l-full " href="#">
-                            Deposits
-                        </a>
-                        <a class="inline-block text-base text-white font-semibold bg-PrimaryBlue text-center py-2 md:py-3 w-24 md:w-32 rounded-r-full" href="#">
-                            Withdraw
-                        </a>
+                        <span>
+                            <input type="radio" name="transaction" id="deposit" class="sr-only peer" checked>
+                            <label class="inline-block text-base text-black text-center font-semibold bg-PrimaryBlue py-2 md:py-3 w-24 md:w-32 rounded-l-full peer-checked:bg-PrimaryYellow cursor-pointer" for="deposit">Deposits</label>
+                        </span>
+                        <span>
+                            <input type="radio" name="transaction" id="withdraw" class="sr-only peer">
+                            <label class="inline-block text-base text-black text-center font-semibold bg-PrimaryBlue py-2 md:py-3 w-24 md:w-32 rounded-r-full peer-checked:bg-PrimaryYellow cursor-pointer" for="withdraw">Withdraw</label>
+                        </span>
                     </div>
                 </div>
                 <!-- Transaction Table  -->
@@ -864,8 +866,8 @@
                     <div class="item__list relative border px-8 pt-12 pb-16 hover:border-PrimaryYellow transition-all ease-in-out duration-500 group before:absolute before:content'' before:h-[5px] before:w-[95%] hover:before:bg-PrimaryYellow before:-bottom-[5px] before:transition-all before:ease-in-out before:duration-500 before:-right-[5px] after:absolute after:content'' after:w-[5px] after:h-[95%] hover:after:bg-PrimaryYellow after:-bottom-[5px] after:-right-[5px] after:transition-all after:ease-in-out after:duration-500">
                         <!-- Icon  -->
                         <div class="icon w-16 h-16 bg-[#bd4cec] rounded-full flex justify-center items-center text-2xl text-white group-hover:text-black transition-all ease-in-out duration-500 group-hover:bg-PrimaryYellow absolute -top-10 left-0 right-0  mx-auto after:absolute after:content'' after:w-[5px] after:rounded-full after:h-8 after:bg-[#bd4cec] after:top-14 after:-z-10 group-hover:after:bg-PrimaryYellow after:transition-all after:ease-in-out after:duration-500">
-                            <i class="fa-solid fa-globe"></i>
-                            <i class="flaticon-language"></i>
+
+                            <i class="fi fi-rr-globe"></i>
                         </div>
                         <div class="w-4 h-4 bg-[#bd4cec] rounded-full mx-auto mt-4 group-hover:bg-PrimaryYellow transition-all ease-in-out duration-500 relative after:absolute after:content'' after:border-2 after:border-[#bd4cec] after:rounded-full after:mx-auto after:p-3 after:-top-[6px] after:-left-[6px] group-hover:after:border-PrimaryYellow after:transition-all after:ease-in-out after:duration-500">
 
@@ -1560,6 +1562,43 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- Form Validation  -->
+
+    <div class="py-24">
+        <input class="outline-none border-2 w-40" type="number" min="1" max="11" name="" id="number">
+        <input type="number" min="0" max="100" step="5">
+        <input type="submit" value="sujon">
+    </div>
+
+
+    <script>
+        let number = document.getElementById("number");
+        number.addEventListener('input', function(){
+            if(number.value.length>11 || number.value.length<11){
+                number.style.color="red";
+            }
+            else{
+                number.style.color="black";
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Main JS      -->
     <script src="../public/assets/js/main.js"></script>
