@@ -36,35 +36,93 @@ document.addEventListener('alpine:init', () => {
   });
 
   // Swiper JS 
-
+  // Banner 
+  var swiper = new Swiper(".bannerww", {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    navigation: {
+      nextEl: ".banner__next",
+      prevEl: ".banner__prev",
+    },
+  });
   // Testimonial 
-  var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
+  var swiper = new Swiper(".testmal", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
   });
 
+
+
   // Investment 
-  var swiper2 = new Swiper('.swiper2', {
-    slidesPerView: 3,
-    direction: getDirection(),
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    on: {
-      resize: function () {
-        swiper2.changeDirection(getDirection());
+  var swiper = new Swiper('.sstt', {
+    loop:true,
+    slidesPerView: 1,
+        navigation: {
+          nextEl: '.ss',
+          prevEl: '.sss',
+        },
+        autoplay: {
+          reverseDirection: true,
+          delay: 5000,
+          pauseOnMouseEnter: true,
+        },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: '.ss',
+          prevEl: '.sss',
+        },
+        autoplay: {
+          reverseDirection: true,
+          delay: 5000,
+          pauseOnMouseEnter: true,
+        },
       },
-    },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: '.ss',
+          prevEl: '.sss',
+        },
+        autoplay: {
+          reverseDirection: true,
+          delay: 5000,
+          pauseOnMouseEnter: true,
+        },
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: '.ss',
+          prevEl: '.sss',
+        },
+        autoplay: {
+          reverseDirection: true,
+          delay: 5000,
+          pauseOnMouseEnter: true,
+        },
+      },
+    // slidesPerView: 4,
+    
+    // direction: getDirection(),
+    // on: {
+    //   resize: function () {
+    //     swiper.changeDirection(getDirection());
+    //   },
+    // },
+    }
   });
-
-  function getDirection() {
-    var windowWidth = window.innerWidth;
-    var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-
-    return direction;
-  }
+  // function getDirection() {
+  //   var windowWidth = window.innerWidth;
+  //   var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+  //   return direction;
+  // }
  

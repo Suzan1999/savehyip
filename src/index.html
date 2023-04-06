@@ -13,17 +13,16 @@
     <link rel="stylesheet" href="../public/assets/css/font.css">
     <!-- AlpineJS stylesheet  -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <!-- Swiper JS  -->
-    <link rel="stylesheet" href="../public/assets/css/swiper.css"/>
+    <!-- Swiper stylesheet  -->
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
     <!-- Tailwind Stylesheet  -->
     <link rel="stylesheet" href="../public/assets/css/output.css">
     <!-- Custom Stylesheet  -->
     <link rel="stylesheet" href="../public/assets/css/custom.css">
-    
 </head>
 <body>
     <!-- Starts Form Header Section  -->
-    <header class="header absolute w-full z-[999]">
+    <header class="header absolute w-full z-50">
         <div class="lg:container mx-auto lg:max-w-screen-2xl px-5 md:px-10 lg:px-16">
             <!-- Navbar  -->
             <nav class="navbar flex flex-wrap justify-between items-center py-4">
@@ -34,7 +33,7 @@
                     </a>
                 </div>
                 <!-- Nav Menu  -->
-                <div class="nav__menu">
+                <div class="nav__menu hidden xl:block">
                     <ul class="gap-8 flex">
                         <!-- Menu List  -->
                         <li class="group relative inline-block">
@@ -118,17 +117,86 @@
         </div>
     </header>
     <!-- Starts Form Banner Section  -->
-    <div class="banner relative">
+    <div class="banner">
         <div class="lg:container mx-auto lg:max-w-screen-2xl px-5 md:px-10 lg:px-16">
-            <!-- Banner Content  -->
+            <div class="relative">
                 <!-- Banner Image  -->
-                <div class="banner__image  top-0 -left-96">
-                    <img class="w-full" src="../public/assets/images/banner.png" alt="">
+                <div class="banner__image md:-ml-[430px]">
+                    <img class="" src="../public/assets/images/banner.png" alt="">
                 </div>
                 <!-- Banner Slider  -->
-                <div class="banner__slider">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis totam esse laborum necessitatibus non odit provident eveniet officiis debitis alias officia molestiae ipsum eaque inventore dolores optio rem sapiente quasi, sequi nemo eos culpa tempora. Delectus aspernatur, eius ipsa id suscipit ab quasi ullam labore tempora sequi consectetur est saepe!
+                <div class="banner__slider absolute top-[18%] left-0 right-0">
+                    <div class="overflow-hidden relative bannerww">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="banner__content md:flex items-center">
+                                    <!-- Banner Details  -->
+                                    <div class="banner__details md:w-7/12 lg:pr-16">
+                                        <!-- Banner Sub Title  -->
+                                        <h4 class="banner__sub-title text-xl text-white font-Poppins font-semibold tracking-[5px] uppercase">
+                                            Often Have Small
+                                        </h4>
+                                        <!-- Banner Title  -->
+                                        <h2 class="banner__title text-white text-6xl leading-[70px] font-Poppins font-semibold mt-7">
+                                            Invest Your Money For Future
+                                        </h2>
+                                        <!-- Banner Button  -->
+                                        <div class="banner__button mt-8 flex items-center gap-5">
+                                            <a class="text-base leading-[16px] font-lato font-semibold border-2 border-white hover:text-white bg-white hover:bg-transparent rounded-full w-40 h-12 flex justify-center items-center transition-all ease-in-out duration-500" href="">
+                                                Starts Now
+                                            </a>
+                                            <a class="text-base leading-[16px] font-lato font-semibold border-2 border-white text-white hover:text-black hover:bg-white rounded-full w-40 h-12 flex justify-center items-center transition-all ease-in-out duration-500" href="">
+                                                View Plans
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Banner Thumbnail  -->
+                                    <div class="banner__thumbnail md:w-5/12 hidden md:block">
+                                        <img class="" src="../public/assets/images/slider_img.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="banner__content md:flex items-center">
+                                    <!-- Banner Details  -->
+                                    <div class="banner__details md:w-7/12 lg:pr-16">
+                                        <!-- Banner Sub Title  -->
+                                        <h4 class="banner__sub-title text-xl text-white font-Poppins font-semibold tracking-[5px] uppercase">
+                                            Often Have Small
+                                        </h4>
+                                        <!-- Banner Title  -->
+                                        <h2 class="banner__title text-white text-6xl leading-[70px] font-Poppins font-semibold mt-7">
+                                            Invest Your Money For Future
+                                        </h2>
+                                        <!-- Banner Button  -->
+                                        <div class="banner__button mt-8 flex items-center gap-5">
+                                            <a class="text-base leading-[16px] font-lato font-semibold border-2 border-white hover:text-white bg-white hover:bg-transparent rounded-full w-40 h-12 flex justify-center items-center transition-all ease-in-out duration-500" href="">
+                                                Starts Now
+                                            </a>
+                                            <a class="text-base leading-[16px] font-lato font-semibold border-2 border-white text-white hover:text-black hover:bg-white rounded-full w-40 h-12 flex justify-center items-center transition-all ease-in-out duration-500" href="">
+                                                View Plans
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Banner Thumbnail  -->
+                                    <div class="banner__thumbnail md:w-5/12 hidden md:block">
+                                        <img class="" src="../public/assets/images/slider_img.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Banner Slider Button  -->
+                    <div class="button flex justify-start items-center gap-4">
+                        <span class="w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center cursor-pointer text-base text-black hover:bg-transparent hover:text-white transition-all ease-in-out duration-300 border-2 border-white banner__prev">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </span>
+                        <span class="w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center cursor-pointer text-base text-black hover:bg-transparent hover:text-white transition-all ease-in-out duration-300 border-2 border-white banner__next">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
                 </div>
+            </div>
         </div>
     </div>
     <!-- Starts Form About Section  -->
@@ -143,7 +211,7 @@
                     </div>
                 </div>
                 <!-- About Details  -->
-                <div class="about__details mt-6 sm:mt-10 md:mt-0">
+                <div class="about__details mt-8 sm:mt-10 lg:mt-0">
                     <!-- About Sub Title  -->
                     <h4 class="about__sub-title text-PrimaryBlue text-sm sm:text-base font-medium font-Poppins tracking-[5px]">
                         WHO WE ARE
@@ -951,7 +1019,7 @@
                 </div>
                 <!-- Testimonial Client  -->
                 <div class="testimonial__client mt-14 sm:mt-22">
-                    <div class="swiper mySwiper">
+                    <div class="relative overflow-hidden testmal">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <!-- Client Says  -->
@@ -1095,10 +1163,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mt-20">
-                            <div class="swiper-pagination">
-                            </div>
-                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -1108,7 +1173,7 @@
    <div class="investors my-14 lg:my-24">
         <div class="lg:container mx-auto lg:max-w-screen-2xl px-5 md:px-10 lg:px-16">
             <!-- Investors Content  -->
-            <div class="investor__content">
+            <div class="investor__content relative">
                 <!-- Investors Heading  -->
                 <div class="investors__heading sm:flex justify-between items-center">
                     <div class="content">
@@ -1122,118 +1187,158 @@
                     </div>
                     <!-- Heading Button  -->
                     <div class="button mt-8 sm:mt-0 flex justify-center items-center gap-3">
-                        <span class="w-[45px] h-[45px] bg-PrimaryBlue rounded-full flex justify-center items-center cursor-pointer text-base text-white hover:text-black hover:bg-PrimaryYellow transition-all ease-in-out duration-500">
+                        <span class="w-[45px] h-[45px] bg-PrimaryBlue rounded-full flex justify-center items-center cursor-pointer text-base text-white hover:text-black hover:bg-PrimaryYellow transition-all ease-in-out duration-500 ss">
                             <i class="fa-solid fa-arrow-left"></i>
                         </span>
-                        <span class="w-[45px] h-[45px] bg-PrimaryBlue rounded-full flex justify-center items-center cursor-pointer text-base text-white hover:text-black hover:bg-PrimaryYellow transition-all ease-in-out duration-500">
+                        <span class="w-[45px] h-[45px] bg-PrimaryBlue rounded-full flex justify-center items-center cursor-pointer text-base text-white hover:text-black hover:bg-PrimaryYellow transition-all ease-in-out duration-500 sss">
                             <i class="fa-solid fa-arrow-right"></i>
                         </span>
                     </div>
                 </div>
                 <!-- Investors Item  -->
-                <div class="investors__item grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
-                    <!-- Item List  -->
-                    <div class="item__list group">
-                        <!-- Thumbnail  -->
-                        <div class="thumbnail">
-                            <img class="w-full" src="../public/assets/images/inves1.png" alt="">
-                        </div>
-                        <!-- Details  -->
-                        <div class="details relative -mt-8 pt-20 pb-5 border group-hover:border-PrimaryYellow transition-all ease-in-out duration-500 border-t-0">
-                            <!-- Icon  -->
-                            <div class="icon ">
-                                <a class="absolute -top-6 left-0 right-0 mx-auto w-16 h-16 bg-PrimaryBlue rounded-full border-4 border-white text-3xl text-white flex justify-center items-center group-hover:text-black group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 after:absolute after:content'' after:w-[5px] after:h-8 after:bg-PrimaryBlue after:rounded-full after:top-12 group-hover:after:bg-PrimaryYellow after:transition-all after:ease-in-out after:duration-700" href="#">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
+                <div class="investors__item mt-10 ">
+                    <div class="sstt overflow-hidden relative">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <!-- Item List  -->
+                                <div class="item__list group swiper-slide">
+                                    <!-- Thumbnail  -->
+                                    <div class="thumbnail">
+                                        <img class="w-full" src="../public/assets/images/inves1.png" alt="">
+                                    </div>
+                                    <!-- Details  -->
+                                    <div class="details relative -mt-8 pt-20 pb-5 border group-hover:border-PrimaryYellow transition-all ease-in-out duration-500 border-t-0">
+                                        <!-- Icon  -->
+                                        <div class="icon ">
+                                            <a class="absolute -top-6 left-0 right-0 mx-auto w-16 h-16 bg-PrimaryBlue rounded-full border-4 border-white text-3xl text-white flex justify-center items-center group-hover:text-black group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 after:absolute after:content'' after:w-[5px] after:h-8 after:bg-PrimaryBlue after:rounded-full after:top-12 group-hover:after:bg-PrimaryYellow after:transition-all after:ease-in-out after:duration-700" href="#">
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <div class="w-4 h-4 bg-PrimaryBlue rounded-full mx-auto relative after:absolute after:content'' after:border-2 after:border-PrimaryBlue after:rounded-full after:p-3 after:-top-[6px] after:-left-[6px] group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 group-hover:after:border-PrimaryYellow after:transition-all after:ease-in-out after:duration-700"></div>
+                                       <!-- Content  -->
+                                       <div class="content text-center mt-8">
+                                            <a class="text-2xl font-semibold font-Poppins group-hover:text-PrimaryYellow transition-all ease-in-out duration-700" class="" href="#">
+                                                liva M.
+                                            </a>
+                                            <p class="text-base text-PrimaryBlue font-lato font-normal mt-2">
+                                                $22500.00 USD
+                                            </p>
+                                       </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="w-4 h-4 bg-PrimaryBlue rounded-full mx-auto relative after:absolute after:content'' after:border-2 after:border-PrimaryBlue after:rounded-full after:p-3 after:-top-[6px] after:-left-[6px] group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 group-hover:after:border-PrimaryYellow after:transition-all after:ease-in-out after:duration-700"></div>
-                           <!-- Content  -->
-                           <div class="content text-center mt-8">
-                                <a class="text-2xl font-semibold font-Poppins group-hover:text-PrimaryYellow transition-all ease-in-out duration-700" class="" href="#">
-                                    liva M.
-                                </a>
-                                <p class="text-base text-PrimaryBlue font-lato font-normal mt-2">
-                                    $22500.00 USD
-                                </p>
-                           </div>
-                        </div>
-                    </div>
-                    <!-- Item List  -->
-                    <div class="item__list group">
-                        <!-- Thumbnail  -->
-                        <div class="thumbnail">
-                            <img class="w-full" src="../public/assets/images/inves2.png" alt="">
-                        </div>
-                        <!-- Details  -->
-                        <div class="details relative -mt-8 pt-20 pb-5 border group-hover:border-PrimaryYellow transition-all ease-in-out duration-500 border-t-0">
-                            <!-- Icon  -->
-                            <div class="icon ">
-                                <a class="absolute -top-6 left-0 right-0 mx-auto w-16 h-16 bg-PrimaryBlue rounded-full border-4 border-white text-3xl text-white flex justify-center items-center group-hover:text-black group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 after:absolute after:content'' after:w-[5px] after:h-8 after:bg-PrimaryBlue after:rounded-full after:top-12 group-hover:after:bg-PrimaryYellow after:transition-all after:ease-in-out after:duration-700" href="#">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
+                            <div class="swiper-slide">
+                                <!-- Item List  -->
+                                <div class="item__list group swiper-slide">
+                                    <!-- Thumbnail  -->
+                                    <div class="thumbnail">
+                                        <img class="w-full" src="../public/assets/images/inves2.png" alt="">
+                                    </div>
+                                    <!-- Details  -->
+                                    <div class="details relative -mt-8 pt-20 pb-5 border group-hover:border-PrimaryYellow transition-all ease-in-out duration-500 border-t-0">
+                                        <!-- Icon  -->
+                                        <div class="icon ">
+                                            <a class="absolute -top-6 left-0 right-0 mx-auto w-16 h-16 bg-PrimaryBlue rounded-full border-4 border-white text-3xl text-white flex justify-center items-center group-hover:text-black group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 after:absolute after:content'' after:w-[5px] after:h-8 after:bg-PrimaryBlue after:rounded-full after:top-12 group-hover:after:bg-PrimaryYellow after:transition-all after:ease-in-out after:duration-700" href="#">
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <div class="w-4 h-4 bg-PrimaryBlue rounded-full mx-auto relative after:absolute after:content'' after:border-2 after:border-PrimaryBlue after:rounded-full after:p-3 after:-top-[6px] after:-left-[6px] group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 group-hover:after:border-PrimaryYellow after:transition-all after:ease-in-out after:duration-700"></div>
+                                       <!-- Content  -->
+                                       <div class="content text-center mt-8">
+                                            <a class="text-2xl font-semibold font-Poppins group-hover:text-PrimaryYellow transition-all ease-in-out duration-700" class="" href="#">
+                                                Josep K.
+                                            </a>
+                                            <p class="text-base text-PrimaryBlue font-lato font-normal mt-2">
+                                                $22500.00 USD
+                                            </p>
+                                       </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="w-4 h-4 bg-PrimaryBlue rounded-full mx-auto relative after:absolute after:content'' after:border-2 after:border-PrimaryBlue after:rounded-full after:p-3 after:-top-[6px] after:-left-[6px] group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 group-hover:after:border-PrimaryYellow after:transition-all after:ease-in-out after:duration-700"></div>
-                           <!-- Content  -->
-                           <div class="content text-center mt-8">
-                                <a class="text-2xl font-semibold font-Poppins group-hover:text-PrimaryYellow transition-all ease-in-out duration-700" class="" href="#">
-                                    Josep K.
-                                </a>
-                                <p class="text-base text-PrimaryBlue font-lato font-normal mt-2">
-                                    $22500.00 USD
-                                </p>
-                           </div>
-                        </div>
-                    </div>
-                    <!-- Item List  -->
-                    <div class="item__list group">
-                        <!-- Thumbnail  -->
-                        <div class="thumbnail">
-                            <img class="w-full" src="../public/assets/images/inves3.png" alt="">
-                        </div>
-                        <!-- Details  -->
-                        <div class="details relative -mt-8 pt-20 pb-5 border group-hover:border-PrimaryYellow transition-all ease-in-out duration-500 border-t-0">
-                            <!-- Icon  -->
-                            <div class="icon ">
-                                <a class="absolute -top-6 left-0 right-0 mx-auto w-16 h-16 bg-PrimaryBlue rounded-full border-4 border-white text-3xl text-white flex justify-center items-center group-hover:text-black group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 after:absolute after:content'' after:w-[5px] after:h-8 after:bg-PrimaryBlue after:rounded-full after:top-12 group-hover:after:bg-PrimaryYellow after:transition-all after:ease-in-out after:duration-700" href="#">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
+                            <div class="swiper-slide">
+                                <!-- Item List  -->
+                                <div class="item__list group swiper-slide">
+                                    <!-- Thumbnail  -->
+                                    <div class="thumbnail">
+                                        <img class="w-full" src="../public/assets/images/inves3.png" alt="">
+                                    </div>
+                                    <!-- Details  -->
+                                    <div class="details relative -mt-8 pt-20 pb-5 border group-hover:border-PrimaryYellow transition-all ease-in-out duration-500 border-t-0">
+                                        <!-- Icon  -->
+                                        <div class="icon ">
+                                            <a class="absolute -top-6 left-0 right-0 mx-auto w-16 h-16 bg-PrimaryBlue rounded-full border-4 border-white text-3xl text-white flex justify-center items-center group-hover:text-black group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 after:absolute after:content'' after:w-[5px] after:h-8 after:bg-PrimaryBlue after:rounded-full after:top-12 group-hover:after:bg-PrimaryYellow after:transition-all after:ease-in-out after:duration-700" href="#">
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <div class="w-4 h-4 bg-PrimaryBlue rounded-full mx-auto relative after:absolute after:content'' after:border-2 after:border-PrimaryBlue after:rounded-full after:p-3 after:-top-[6px] after:-left-[6px] group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 group-hover:after:border-PrimaryYellow after:transition-all after:ease-in-out after:duration-700"></div>
+                                       <!-- Content  -->
+                                       <div class="content text-center mt-8">
+                                            <a class="text-2xl font-semibold font-Poppins group-hover:text-PrimaryYellow transition-all ease-in-out duration-700" class="" href="#">
+                                                Akshay H.
+                                            </a>
+                                            <p class="text-base text-PrimaryBlue font-lato font-normal mt-2">
+                                                $22500.00 USD
+                                            </p>
+                                       </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="w-4 h-4 bg-PrimaryBlue rounded-full mx-auto relative after:absolute after:content'' after:border-2 after:border-PrimaryBlue after:rounded-full after:p-3 after:-top-[6px] after:-left-[6px] group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 group-hover:after:border-PrimaryYellow after:transition-all after:ease-in-out after:duration-700"></div>
-                           <!-- Content  -->
-                           <div class="content text-center mt-8">
-                                <a class="text-2xl font-semibold font-Poppins group-hover:text-PrimaryYellow transition-all ease-in-out duration-700" class="" href="#">
-                                    Akshay H.
-                                </a>
-                                <p class="text-base text-PrimaryBlue font-lato font-normal mt-2">
-                                    $22500.00 USD
-                                </p>
-                           </div>
-                        </div>
-                    </div>
-                    <!-- Item List  -->
-                    <div class="item__list group">
-                        <!-- Thumbnail  -->
-                        <div class="thumbnail">
-                            <img class="w-full" src="../public/assets/images/inves4.png" alt="">
-                        </div>
-                        <!-- Details  -->
-                        <div class="details relative -mt-8 pt-20 pb-5 border group-hover:border-PrimaryYellow transition-all ease-in-out duration-500 border-t-0">
-                            <!-- Icon  -->
-                            <div class="icon ">
-                                <a class="absolute -top-6 left-0 right-0 mx-auto w-16 h-16 bg-PrimaryBlue rounded-full border-4 border-white text-3xl text-white flex justify-center items-center group-hover:text-black group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 after:absolute after:content'' after:w-[5px] after:h-8 after:bg-PrimaryBlue after:rounded-full after:top-12 group-hover:after:bg-PrimaryYellow after:transition-all after:ease-in-out after:duration-700" href="#">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
+                            <div class="swiper-slide">
+                                <!-- Item List  -->
+                                <div class="item__list group swiper-slide">
+                                    <!-- Thumbnail  -->
+                                    <div class="thumbnail">
+                                        <img class="w-full" src="../public/assets/images/inves4.png" alt="">
+                                    </div>
+                                    <!-- Details  -->
+                                    <div class="details relative -mt-8 pt-20 pb-5 border group-hover:border-PrimaryYellow transition-all ease-in-out duration-500 border-t-0">
+                                        <!-- Icon  -->
+                                        <div class="icon ">
+                                            <a class="absolute -top-6 left-0 right-0 mx-auto w-16 h-16 bg-PrimaryBlue rounded-full border-4 border-white text-3xl text-white flex justify-center items-center group-hover:text-black group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 after:absolute after:content'' after:w-[5px] after:h-8 after:bg-PrimaryBlue after:rounded-full after:top-12 group-hover:after:bg-PrimaryYellow after:transition-all after:ease-in-out after:duration-700" href="#">
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <div class="w-4 h-4 bg-PrimaryBlue rounded-full mx-auto relative after:absolute after:content'' after:border-2 after:border-PrimaryBlue after:rounded-full after:p-3 after:-top-[6px] after:-left-[6px] group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 group-hover:after:border-PrimaryYellow after:transition-all after:ease-in-out after:duration-700"></div>
+                                       <!-- Content  -->
+                                       <div class="content text-center mt-8">
+                                            <a class="text-2xl font-semibold font-Poppins group-hover:text-PrimaryYellow transition-all ease-in-out duration-700" class="" href="#">
+                                                Maria F.
+                                            </a>
+                                            <p class="text-base text-PrimaryBlue font-lato font-normal mt-2">
+                                                $22500.00 USD
+                                            </p>
+                                       </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="w-4 h-4 bg-PrimaryBlue rounded-full mx-auto relative after:absolute after:content'' after:border-2 after:border-PrimaryBlue after:rounded-full after:p-3 after:-top-[6px] after:-left-[6px] group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 group-hover:after:border-PrimaryYellow after:transition-all after:ease-in-out after:duration-700"></div>
-                           <!-- Content  -->
-                           <div class="content text-center mt-8">
-                                <a class="text-2xl font-semibold font-Poppins group-hover:text-PrimaryYellow transition-all ease-in-out duration-700" class="" href="#">
-                                    Maria F.
-                                </a>
-                                <p class="text-base text-PrimaryBlue font-lato font-normal mt-2">
-                                    $22500.00 USD
-                                </p>
-                           </div>
+                            <div class="swiper-slide">
+                                <!-- Item List  -->
+                                <div class="item__list group swiper-slide">
+                                    <!-- Thumbnail  -->
+                                    <div class="thumbnail">
+                                        <img class="w-full" src="../public/assets/images/inves4.png" alt="">
+                                    </div>
+                                    <!-- Details  -->
+                                    <div class="details relative -mt-8 pt-20 pb-5 border group-hover:border-PrimaryYellow transition-all ease-in-out duration-500 border-t-0">
+                                        <!-- Icon  -->
+                                        <div class="icon ">
+                                            <a class="absolute -top-6 left-0 right-0 mx-auto w-16 h-16 bg-PrimaryBlue rounded-full border-4 border-white text-3xl text-white flex justify-center items-center group-hover:text-black group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 after:absolute after:content'' after:w-[5px] after:h-8 after:bg-PrimaryBlue after:rounded-full after:top-12 group-hover:after:bg-PrimaryYellow after:transition-all after:ease-in-out after:duration-700" href="#">
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <div class="w-4 h-4 bg-PrimaryBlue rounded-full mx-auto relative after:absolute after:content'' after:border-2 after:border-PrimaryBlue after:rounded-full after:p-3 after:-top-[6px] after:-left-[6px] group-hover:bg-PrimaryYellow transition-all ease-in-out duration-700 group-hover:after:border-PrimaryYellow after:transition-all after:ease-in-out after:duration-700"></div>
+                                       <!-- Content  -->
+                                       <div class="content text-center mt-8">
+                                            <a class="text-2xl font-semibold font-Poppins group-hover:text-PrimaryYellow transition-all ease-in-out duration-700" class="" href="#">
+                                                Maria F.
+                                            </a>
+                                            <p class="text-base text-PrimaryBlue font-lato font-normal mt-2">
+                                                $22500.00 USD
+                                            </p>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1733,11 +1838,10 @@
             </div>
         </div>
     </footer>
-    
     <!-- FontAwesome Icon JS  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
     <!-- Swiperjs JS  -->
-    <script src="../public/assets/js/swiper.js"></script>
+    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
     <!-- Main JS      -->
     <script src="../public/assets/js/main.js"></script>
 </body>
