@@ -39,12 +39,12 @@ document.addEventListener('alpine:init', () => {
   // Banner 
   var swiper = new Swiper(".bannerww", {
     loop: true,
-    autoplay: {
-      delay: 5000,
-    },
     navigation: {
       nextEl: ".banner__next",
       prevEl: ".banner__prev",
+    },
+    autoplay: {
+      delay: 5000,
     },
   });
   // Testimonial 
@@ -54,8 +54,6 @@ document.addEventListener('alpine:init', () => {
       clickable: true,
     },
   });
-
-
 
   // Investment 
   var swiper = new Swiper('.sstt', {
@@ -125,4 +123,37 @@ document.addEventListener('alpine:init', () => {
   //   var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
   //   return direction;
   // }
+
+
+  // ===== Scroll to Top ==== // 
+  $(window).scroll(function() {
+    if ($(this).scrollTop() >= 100) {
+        $('#return-to-top').fadeIn(200);
+    } else {
+        $('#return-to-top').fadeOut(200);
+    }
+});
+$('#return-to-top').on('click', function() {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 5000);
+});
+
+// Number Scrolling Off 
+document.addEventListener("wheel", function(event){
+  if(document.activeElement.type === "number"){
+      document.activeElement.blur();
+  }
+});
+
+// Only Number Type
+function inpNum(e) {
+  e = e || window.event;
+  var charCode = (typeof e.which == "undefined") ? e.keyCode : e.which;
+  var charStr = String.fromCharCode(charCode);
+  if (!charStr.match(/^[0-9]+$/))
+    e.preventDefault();
+}
+
+		
  
